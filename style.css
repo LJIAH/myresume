@@ -31,12 +31,16 @@ section.summary .text{
 }
 
 section.works{
-    height: 100vh;
     background: rgb(244,244,244);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+@media (max-width:420px) {
+    section.works{
+        min-height: 100vh;
+    }
 }
 section.works img{
     max-width: 200px;
@@ -51,6 +55,14 @@ section.works > ul{
     flex-wrap:wrap;
     max-width: 700px;
     justify-content: space-between;
+}
+@media (max-width:420px) {
+    section.works{
+        padding: 1em;
+    }
+    section.works > ul{
+        justify-content: center;
+    }
 }
 section.works > ul h3{
     font-weight: normal;
